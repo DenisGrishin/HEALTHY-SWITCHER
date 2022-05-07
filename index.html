@@ -1,179 +1,557 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220313174053">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «HealthyFood»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «HealthyFood»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header data-scroll-show data-scroll="120" class="header">
+			<div class="header__container">
+				<a href="" class="header__logo _icon-logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" data-goto-header class="menu__link">Menu</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto="#recipes" class="menu__link">Recipes</a>
+							</li>
+							<li class="menu__item"><a href="" data-goto-header data-goto="#chefs" class="menu__link">Chefs</a>
+							</li>
+							<li class="menu__item"><a href="" data-goto-header data-goto="#contacts" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="main-page">
+				<div class="main-page__container">
+					<div class="main-page__body">
+						<div class="main-page__top">
+							<h1 class="main-page__title">Your <span>Davourite Food</span>
+								delivered <span>Hot & Fresh</span></h1>
+							<p class="main-page__text">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping &
+								marinating, so you can cook a fresh homemade dinner in just 15 minutes.</p>
+							<a href="" class="main-page__button button">Order Now</a>
+						</div>
+						<div id="contacts" class="main-page__bottom row-bottom">
+							<div class="row-bottom__iteam">
+								<p class="row-bottom__info _icon-clock">Today 10:00 am - 7:00 pm</p>
+								<a href="" class="row-bottom__text">Working hours</a>
+							</div>
+							<div class="row-bottom__iteam">
+								<p class="row-bottom__info _icon-map">Velyka Vasylkivska 100</p>
+								<a href="" class="row-bottom__text">Get Directions</a>
+							</div>
+							<div class="row-bottom__iteam">
+								<div class="row-bottom__info _icon-phone">+38 (063)833 24 15</div>
+								<a href="" class="row-bottom__text">Call Online</a>
+							</div>
+						</div>
+					</div>
+					<div class="main-page__bg-ibg"><img src="img/bg.jpg" alt=""></div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__header header-title">
+							<h3 class=" header-title__title   ">The Basics Of Healthy Food</h3>
+							<div class="header-title__bg-text header-title__bg-text_after-none">ABOUT</div>
+						</div>
+						<div class="about__text">In aliquacs Of Healcs Of Healcs Of Healcs Of Healcs Of Healcs Of Healcs Of
+							Healcs Of Healu minim dolore laboris enim mollit voluptate irure esse
+							aliquip.
+						</div>
+						<div class="about__slider slider-about-body">
+							<div class="slider-about-body__item_prev _icon-arrow"></div>
+							<div class="slider-about-body__slider">
+								<div class="slider-about-body__swiper">
+									<div class="slider-about-body__slide">
+										<img data-src="img/about/1.jpg" class="swiper-lazy" alt="Eat">
+									</div>
+									<div class="slider-about-body__slide">
+										<img data-src="img/about/2.jpg" class="swiper-lazy" alt="Eat">
+									</div>
+									<div class="slider-about-body__slide">
+										<img data-src="img/about/1.jpg" class="swiper-lazy" alt="Eat">
+									</div>
+									<div class="slider-about-body__slide">
+										<img data-src="img/about/2.jpg" class="swiper-lazy" alt="Eat">
+									</div>
+								</div>
+							</div>
+							<div class=" slider-about-body__controll"></div>
+
+							<div class="slider-about-body__item_next _icon-arrow"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="work">
+				<div class="work__container">
+					<div class="work__header header-title">
+						<h3 class=" header-title__title">how it works</h3>
+						<div class="header-title__bg-text">work</div>
+					</div>
+					<div class="work__body card">
+						<div class="card__items">
+							<div class="card__item ">
+								<div class="card__title">Pick meals</div>
+								<div class="card__text">Choose your meals from our diverse weekly menu. Find gluten or
+									dairy
+									free, low carb & veggie options.</div>
+							</div>
+							<div class="card__item ">
+								<div class="card__title">Choose how #often</div>
+								<div class="card__text">Our team of chefs do the prep work - no more chopping, measuring, or
+									sink full of dishes!</div>
+							</div>
+							<div class="card__item ">
+								<div class="card__title">fast deliveries</div>
+								<div class="card__text">Your freshly prepped 15-min dinner kits arrive on your doorstep in a
+									refrigerated box.</div>
+							</div>
+							<div class="card__item">
+								<div class="card__title">tasty meals</div>
+								<div class="card__text">Gobble makes cooking fast, so you have more time to unwind and be
+									with family.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="dishes">
+				<div class="dishes__container">
+					<div class="dishes__header header-title">
+						<h3 class=" header-title__title">how it works</h3>
+						<div class="header-title__bg-text">work</div>
+					</div>
+
+					<div class="dishes__iteams">
+						<div class="dishes__iteams">
+
+							<div class="item">
+								<div class="item__block">
+									<a class="item__img-ibg" href=""><img src="img/dishes/1.jpg" alt="Eat"><a href=""></a>
+										<div class="item__body">
+											<a href="" class="item__title">Featured Meal</a>
+											<div class="item__sub-title">Served with french fries + drink</div>
+											<div class="item__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+												whopper patty, Add Tender crisp patty and more...</div>
+										</div>
+										<form class="item__footer">
+											<div class="rating rating_set rating_margin-right">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3.6</div>
+											</div>
+
+											<button type="button" class="form__button button">Order</button>
+										</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item__block">
+									<a class="item__img-ibg" href=""><img src="img/dishes/2.jpg" alt="Eat"><a href=""></a>
+										<div class="item__body">
+											<a href="" class="item__title">Featured Meal</a>
+											<div class="item__sub-title">Served with french fries + drink</div>
+											<div class="item__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+												whopper patty, Add Tender crisp patty and more...</div>
+										</div>
+										<form class="item__footer">
+											<div class="rating rating_set rating_margin-right">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3.6</div>
+											</div>
+
+											<button type="button" class="form__button button">Order</button>
+										</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item__block">
+									<a class="item__img-ibg" href=""><img src="img/dishes/3.jpg" alt="Eat"><a href=""></a>
+										<div class="item__body">
+											<a href="" class="item__title">Featured Meal</a>
+											<div class="item__sub-title">Served with french fries + drink</div>
+											<div class="item__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+												whopper patty, Add Tender crisp patty and more...</div>
+										</div>
+										<form class="item__footer">
+											<div class="rating rating_margin-right rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">4.6</div>
+											</div>
+
+											<button type="button" class="form__button button">Order</button>
+										</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item__block">
+									<a class="item__img-ibg" href=""><img src="img/dishes/4.jpg" alt="Eat"><a href=""></a>
+										<div class="item__body">
+											<a href="" class=" item__title">Featured Meal</a>
+											<div class="item__sub-title">Served with french fries + drink</div>
+											<div class="item__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+												whopper patty, Add Tender crisp patty and more...</div>
+										</div>
+										<form class="item__footer">
+											<div class="rating rating_margin-right rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">4.6</div>
+											</div>
+
+											<button type="button" class="form__button button">Order</button>
+										</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item__block">
+									<a class="item__img-ibg" href=""><img src="img/dishes/5.jpg" alt="Eat"><a href=""></a>
+										<div class="item__body">
+											<a href="" class="item__title">Featured Meal</a>
+											<div class="item__sub-title">Served with french fries + drink</div>
+											<div class="item__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+												whopper patty, Add Tender crisp patty and more...</div>
+										</div>
+										<form class="item__footer">
+											<div class="rating rating_margin-right rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">4.6</div>
+											</div>
+
+											<button type="button" class="form__button button">Order</button>
+										</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item__block">
+									<a class="item__img-ibg" href=""><img src="img/dishes/6.jpg" alt="Eat"><a href=""></a>
+										<div class="item__body">
+											<a href="" class="item__title">Featured Meal</a>
+											<div class="item__sub-title">Served with french fries + drink</div>
+											<div class="item__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+												whopper patty, Add Tender crisp patty and more...</div>
+										</div>
+										<form class="item__footer">
+											<div class="rating rating_margin-right rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">4.6</div>
+											</div>
+
+											<button type="button" class="form__button button">Order</button>
+										</form>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section id="chefs" class="chefs">
+				<div class="chefs__container">
+					<div class="chefs__header header-title">
+						<h3 class=" header-title__title">This month's chefs</h3>
+						<div class="header-title__bg-text">chefs</div>
+					</div>
+					<div class="chefs__items">
+
+						<div class="item-chef item-chef__body">
+
+							<div class="item-chef__top">
+								<img class="item-chef__avatar" src="img/chefs/01.jpg" alt="chef">
+								<div class="item-chef__info">
+									<div class="item-chef__name">Gregory Flores</div>
+									<div class="item-chef__profession">Chef of the cold</div>
+								</div>
+							</div>
+							<div class="item-chef__row">
+								<div> <img class="" src="img/chefs/eat01-1.jpg" alt="eat"></div>
+								<div><img src="img/chefs/eat01-2.jpg" alt="eat"></div>
+								<div><img src="img/chefs/eat01-3.jpg" alt="eat"></div>
+							</div>
+
+						</div>
+						<div class="item-chef item-chef__body">
+
+							<div class="item-chef__top">
+								<img class="item-chef__avatar" src="img/chefs/02.jpg" alt="chef">
+								<div class="item-chef__info">
+									<div class="item-chef__name">Gregory Flores</div>
+									<div class="item-chef__profession">Chef of the cold</div>
+								</div>
+							</div>
+							<div class="item-chef__row">
+								<div> <img src="img/chefs/eat02-1.jpg" alt="eat"></div>
+								<div> <img src="img/chefs/eat02-2.jpg" alt="eat"></div>
+								<div> <img src="img/chefs/eat02-3.jpg" alt="eat"></div>
+
+							</div>
+						</div>
+						<div class="item-chef item-chef__body">
+
+							<div class="item-chef__top">
+								<img class="item-chef__avatar" src="img/chefs/03.jpg" alt="chef">
+								<div class="item-chef__info">
+									<div class="item-chef__name">Gregory Flores</div>
+									<div class="item-chef__profession">Chef of the cold</div>
+								</div>
+							</div>
+							<div class="item-chef__row">
+								<div><img src="img/chefs/eat03-1.jpg" alt="eat"></div>
+								<div> <img src="img/chefs/eat03-2.jpg" alt="eat"></div>
+								<di> <img src="img/chefs/eat03-3.jpg" alt="eat"></di>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="recipes" class="recipes">
+				<div class="recipes__container">
+					<div class="recipes__header header-title">
+						<h3 class=" header-title__title">Recipes From Our Chefs</h3>
+						<div class="header-title__bg-text">recipes</div>
+					</div>
+					<div class="recipes__body item-block">
+						<div class="item-block__body item-block__body_bg ">
+							<div class="item-block__title">
+								<h3>breakfast</h3>
+							</div>
+							<div class="item-block__date">05 Jul 2016</div>
+							<div class="item-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+							<div class="item-block__chef-name">Jason Keller</div>
+							<div class="item-block__bottom row-bottom">
+								<div class="row-bottom__views _icon-visibility">275</div>
+								<div class="row-bottom__comments _icon-answer">12</div>
+							</div>
+						</div>
+						<div class="item-block__body item-row">
+							<div class="item-row__box">
+								<div class="item-row__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut
+								</div>
+								<div class="item-row__footer">
+									<div class="item-row__left">
+										<div class="item-row__title">
+											<h3>lunch</h3>
+										</div>
+										<div class="item-row__date">05 Jul 2016</div>
+									</div>
+									<div class="item-row__right row-right">
+										<div class="row-right__views _icon-visibility">275</div>
+										<div class="row-right__comments _icon-answer">12</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-row__box">
+								<div class="item-row__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut
+								</div>
+								<div class="item-row__footer">
+									<div class="item-row__left">
+										<div class="item-row__title">
+											<h3>dinner</h3>
+										</div>
+										<div class="item-row__date">05 Jul 2016</div>
+									</div>
+									<div class="item-row__right row-right">
+										<div class="row-right__views _icon-visibility">275</div>
+										<div class="row-right__comments _icon-answer">12</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-row__box">
+								<div class="item-row__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut
+								</div>
+								<div class="item-row__footer">
+									<div class="item-row__left">
+										<div class="item-row__title">
+											<h3>sweets</h3>
+										</div>
+										<div class="item-row__date">05 Jul 2016</div>
+									</div>
+									<div class="item-row__right row-right">
+										<div class="row-right__views _icon-visibility">275</div>
+										<div class="row-right__comments _icon-answer">12</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="social">
+				<div class="social__container">
+					<div class="social__header header-title">
+						<h3 class=" header-title__title">We in Social</h3>
+						<a href="" class="header-title__bg-text">social</a>
+					</div>
+					<div class="social__items item-social ">
+						<div class="item-social__block ">
+							<div class="item-social__header ">
+								<div class="item-social__title _icon-twitter">Twitter</div>
+								<a href="" class="item-social__button button">follow us</a>
+							</div>
+							<div class="item-social__body">
+								<div class="item-social__contentn" data-simplebar>
+									<div class="item-social__date">24 Jun at 16:20 pm</div>
+									<div class="item-social__text">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed
+										do eiusmod tempor incididunt ut Lncididunt ut Lorem ipsum dolor sincididunt ut Lorem
+										ipsum
+										dolor sincididunt ut Lorem ipsum dolncididunt ut Lorem ipsum dolor sincididunt ut Lorem
+										ipsum dolor sior sincididunt ut Lorem ipsum dolor siorem ipsum dolor
+										sit amet, consectetur adipiscing/div>
+									</div>
+								</div>
+								<div class="item-social__name">@DennisFerguson</div>
+							</div>
+						</div>
+
+
+						<div class="item-social__block   ">
+							<div class="item-social__header ">
+								<div class="item-social__title _icon-instagram">Instagram</div>
+								<a href="" class="item-social__button button">follow us</a>
+							</div>
+							<div class="item-social__body item-social__body_img-p ">
+								<img src="img/social/image1.jpg" alt="eat">
+								<img src="img/social/image2.jpg" alt="eat">
+								<img src="img/social/image3.jpg" alt="eat">
+								<img src="img/social/image4.jpg" alt="eat">
+								<img src="img/social/image5.jpg" alt="eat">
+								<img src="img/social/image6.jpg" alt="eat">
+							</div>
+						</div>
+						<div class="item-social__block ">
+							<div class="item-social__header">
+								<div class="item-social__title _icon-facebook">Facebook</div>
+								<a href="" class="item-social__button button">follow us</a>
+							</div>
+							<div class="item-social__body">
+								<div class="item-social__contentn" data-simplebar>
+									<div class="item-social__date">24 Jun at 16:20 pm</div>
+									<div class="item-social__text ">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed
+										do eiusmod tempor incncididunt ut Lorncididunt ut Lorem ipsum dolor sincididunt ut
+										Lorem
+										ipsum dolor siem ipsum dolor sincididunt ut Lorem ipsum dolor
+										sincididunt ut Lorem ipsum dolor sincididunt ut Lorem ipsum dolor siididunt ut Lorem
+										ipsum
+										dolor sit amet, consectetur adipiscing/div>
+									</div>
+								</div>
+								<div class="item-social__name">@DennisFerguson</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__bottom row-bottom">
+					<div class="row-bottom__iteam">
+						<p class="row-bottom__info _icon-clock">Today 10:00 am - 7:00 pm</p>
+						<a href="" class="row-bottom__text">Working hours</a>
+					</div>
+					<div class="row-bottom__iteam">
+						<p class="row-bottom__info _icon-map">Velyka Vasylkivska 100</p>
+						<a href="" class="row-bottom__text">Get Directions</a>
+					</div>
+					<div class="row-bottom__iteam">
+						<div class="row-bottom__info _icon-phone">+38 (063)833 24 15</div>
+						<a href="" class="row-bottom__text">Call Online</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__logo"><a href="" class=" _icon-logo"></a></div>
+			<div class="footer__copy">© Designed by Yellow Snow. All Rights Reserved. </div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
 		</div>
 	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220313174053"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
